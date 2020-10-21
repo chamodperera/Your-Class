@@ -1,11 +1,35 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { AppComponent } from './app.component';
 
-const routes: Routes = [];
+import { ProfileComponent } from './in-window/profile/profile.component';
+import { ChatComponent } from './in-window/chat/chat.component';
+import { VideosComponent } from './in-window/videos/videos.component';
+import { ClassesComponent } from './in-window/classes/classes.component';
+import { LibraryComponent } from './in-window/library/library.component';
+import { TestsComponent } from './in-window/tests/tests.component';
+import { GamesComponent } from './in-window/games/games.component';
+import { SettingsComponent } from './in-window/settings/settings.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+const routes: Routes = [
+      { path: 'profile', component: ProfileComponent },
+      { path: 'chat', component: ChatComponent },
+      { path: 'videos', component: VideosComponent },
+      { path: 'classes', component: ClassesComponent },
+      { path: 'library', component: LibraryComponent },
+      { path: 'tests', component: TestsComponent },
+      { path: 'games', component: GamesComponent },
+      { path: 'settings', component: SettingsComponent },
+      { path: '', redirectTo: '/profile', pathMatch: 'full'},
+      { path: '**', component: PageNotFoundComponent },
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes),
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

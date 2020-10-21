@@ -1,0 +1,36 @@
+.main{
+    height: 100vh;
+    width: 100%;
+}
+
+.menu{
+    height: 10vh;
+}
+
+.container-fluid, .row, .row div{
+    padding: 0;
+    margin: 0;
+    height: 90vh;
+}
+
+// .fieldbar:hover + .sidebar{
+//     display: block;
+//     animation: 1s open ease;
+// }
+
+// .sidebar{
+//     display: none;
+// }
+
+// .sidebar:hover{
+//     display: block;
+// }
+
+// @keyframes open{
+//     from{
+//         opacity: 0;
+//     }
+//     to{
+//         opacity: 1;
+//     }
+// }
