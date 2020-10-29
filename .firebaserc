@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "rivi-k": {
+      "hosting": {
+        "YourClass": [
+          "rivi-k"
+        ]
+      }
+    }
+  }
+}

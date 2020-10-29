@@ -1,4 +1,20 @@
+// @font-face {
+//     font-family: 'AbhayaLibre';
+//     src:  local("AbhayaLibre"), url('./assets/fonts/Abhaya_Libre/AbhayaLibre-Regular.ttf') format('truetype');
+//     unicode-range: U+0025-00FF; 
+// }
+
+// @font-face {
+//     font-family: 'MuktaMalar';
+//     src: local("MuktaMalar"), url('./assets/fonts/Mukta_Malar/MuktaMalar-Regular.ttf') format('truetype');
+//     unicode-range: U+0025-00FF; 
+// }
+@import 'assets/fonts/Sinhala/stylesheet.css';
+@import 'assets/fonts/Tamil/stylesheet.css';
+@import 'assets/fonts/English/stylesheet.css';
+
 html,body{
-    height: 100vh;
+    height: 100vh;    
+    font-family: Nunito, Abhaya Libre, Mukta Malar;
     width: 100%;
 }

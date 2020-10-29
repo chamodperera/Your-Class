@@ -123,8 +123,13 @@
               "devServerTarget": "YourClass:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "YourClass"
 }
