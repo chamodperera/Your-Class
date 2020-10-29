@@ -8,6 +8,19 @@
     display: block;
     margin: auto;
     text-align: center;
-    font-size: 4rem;
-    margin-bottom: 2px;
+    font-size: 3.25rem;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 5px;
+    transition: 1s;
+}
+
+.bar span:hover{
+    background-color: black;
+    color: white;
+}
+
+.bar span:active{
+    border: 0 !important;
+    box-shadow: 0;
 }
