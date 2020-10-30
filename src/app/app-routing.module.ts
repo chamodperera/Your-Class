@@ -12,6 +12,8 @@ import { TestsComponent } from './in-window/tests/tests.component';
 import { GamesComponent } from './in-window/games/games.component';
 import { SettingsComponent } from './in-window/settings/settings.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AddClassComponent } from './in-window/classes/add-class/add-class.component';
+
 
 const routes: Routes = [
       { path: 'profile', component: ProfileComponent },
@@ -22,6 +24,7 @@ const routes: Routes = [
       { path: 'tests', component: TestsComponent },
       { path: 'games', component: GamesComponent },
       { path: 'settings', component: SettingsComponent },
+      {path: 'classes/addClass', component: AddClassComponent},
       { path: '', redirectTo: '/profile', pathMatch: 'full'},
       { path: '**', component: PageNotFoundComponent },
 ];

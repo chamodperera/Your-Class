@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -22,6 +23,7 @@ import { TestsComponent } from './in-window/tests/tests.component';
 import { GamesComponent } from './in-window/games/games.component';
 import { SettingsComponent } from './in-window/settings/settings.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AddClassComponent } from './in-window/classes/add-class/add-class.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -42,11 +44,13 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     TestsComponent,
     GamesComponent,
     SettingsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AddClassComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
+    FormsModule,
     AppRoutingModule,
     TranslateModule.forRoot({
       loader: {
