@@ -1,1 +1,33 @@
-<p>chat works!</p>
+<div class="container-fluid">
+<div class="row chat-full">
+    <div class="col-4 chat-side-bar">   
+<div class="users-list">
+    <h3>Teachers</h3>
+    <div *ngFor="let user of users | async">
+        <ng-template [ngIf]="user.category == 'Teacher'">
+            <img src="{{ user.img }}" class="user-img" alt="">
+            {{ user.name }}
+        </ng-template>
+    </div>
+    <h3>Students</h3>
+    <div *ngFor="let user of users | async">
+        <ng-template [ngIf]="user.category == 'Student'">
+            <a [routerLink]="['/chat',{
+                outlets:{
+                    'chatbox': [user.id]
+                }
+            }]">
+            <img src="{{ user.img }}" class="user-img" alt="">
+            {{ user.name }}
+            </a>
+        </ng-template>
+    </div>
+</div>
+
+    </div>
+    <div class="col-8 chat-b">
+        <router-outlet name="chatbox"></router-outlet>
+    </div>
+</div>
+</div>
+

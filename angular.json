@@ -31,7 +31,8 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/lib-jitsi-meet/dist/lib-jitsi-meet.min.js"
             ]
           },
           "configurations": {
@@ -96,7 +97,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/lib-jitsi-meet/dist/lib-jitsi-meet.min.js"
+            ]
           }
         },
         "lint": {

@@ -1,5 +1,17 @@
+.contain-card{
+    max-width: 500px;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+}
+
 .authImg{
     width: 120px;
     border-radius: 100%;
     margin: 10px;
+}
+
+.change-account button{
+    margin: 5px;
 }

@@ -22,6 +22,7 @@ import { TestsComponent } from './in-window/tests/tests.component';
 import { GamesComponent } from './in-window/games/games.component';
 import { SettingsComponent } from './in-window/settings/settings.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ChatIDComponent } from './in-window/chat-window/chat-id/chat-id.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -42,7 +43,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     TestsComponent,
     GamesComponent,
     SettingsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ChatIDComponent
   ],
   imports: [
     BrowserModule,
