@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -23,6 +24,7 @@ import { GamesComponent } from './in-window/games/games.component';
 import { SettingsComponent } from './in-window/settings/settings.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ChatIDComponent } from './in-window/chat-window/chat-id/chat-id.component';
+import { AddClassComponent } from './in-window/classes/add-class/add-class.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -44,11 +46,16 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     GamesComponent,
     SettingsComponent,
     PageNotFoundComponent,
+<<<<<<< HEAD
     ChatIDComponent
+=======
+    AddClassComponent
+>>>>>>> fc9ee8c291608b533bd220d0b0c1becefcf5ce42
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
+    FormsModule,
     AppRoutingModule,
     TranslateModule.forRoot({
       loader: {

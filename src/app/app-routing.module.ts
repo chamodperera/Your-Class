@@ -13,6 +13,8 @@ import { GamesComponent } from './in-window/games/games.component';
 import { SettingsComponent } from './in-window/settings/settings.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ChatIDComponent } from './in-window/chat-window/chat-id/chat-id.component';
+import { AddClassComponent } from './in-window/classes/add-class/add-class.component';
+
 
 const routes: Routes = [
       { path: 'profile', component: ProfileComponent },
@@ -31,8 +33,14 @@ const routes: Routes = [
       { path: 'tests', component: TestsComponent },
       { path: 'games', component: GamesComponent },
       { path: 'settings', component: SettingsComponent },
+<<<<<<< HEAD
       // { path: '', redirectTo: '/profile', pathMatch: 'full'},
       // { path: '**', component: PageNotFoundComponent },
+=======
+      {path: 'classes/addClass', component: AddClassComponent},
+      { path: '', redirectTo: '/profile', pathMatch: 'full'},
+      { path: '**', component: PageNotFoundComponent },
+>>>>>>> fc9ee8c291608b533bd220d0b0c1becefcf5ce42
 ];
 
 @NgModule({
